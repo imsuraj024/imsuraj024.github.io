@@ -111,11 +111,10 @@ function calculateYearsAndMonths(startDate) {
 }
 
 function displayYearsAndMonths() {
-  const startDate = '2018-09-01';
+  const startDate = '2020-09-01';
   const result = calculateYearsAndMonths(startDate);
 
   document.getElementById('result').textContent = 
-  
   `I am a computer engineering graduate with a comprehensive background in mobile application development, boasting over ${result.years} year(s) and ${result.months} month(s) of hands-on experience. My professional approach is characterized by a strong attention to detail and an unwavering commitment to achieving measurable results.`;
 }
 
