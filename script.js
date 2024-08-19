@@ -54,32 +54,6 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 // overlay.addEventListener("click", testimonialsModalFunc);
 
 
-// calculating years and months
-function calculateYearsAndMonths(startDate) {
-  const now = new Date();
-  const start = new Date(startDate);
-
-  let years = now.getFullYear() - start.getFullYear();
-  let months = now.getMonth() - start.getMonth();
-
-  if (months < 0) {
-      years--;
-      months += 12;
-  }
-
-  return { years, months };
-}
-
-function displayYearsAndMonths() {
-  const startDate = '2020-09-01';
-  const result = calculateYearsAndMonths(startDate);
-
-  document.getElementById('result').textContent = 
-  `With over ${result.years} year(s) and ${result.months} month(s) of professional experience, I'm driven to leverage my expertise in Android and Flutter mobile app development to drive product innovation.`;
-}
-
-// Initial calculation on page load
-displayYearsAndMonths();
 
 // custom select variables
 const select = document.querySelector("[data-select]");
