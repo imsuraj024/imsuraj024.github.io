@@ -94,6 +94,34 @@ const filterFunc = function (selectedValue) {
 
 }
 
+// calculating years and months
+function calculateYearsAndMonths(startDate) {
+  const now = new Date();
+  const start = new Date(startDate);
+
+  let years = now.getFullYear() - start.getFullYear();
+  let months = now.getMonth() - start.getMonth();
+
+  if (months < 0) {
+      years--;
+      months += 12;
+  }
+
+  return { years, months };
+}
+
+function displayYearsAndMonths() {
+  const startDate = '2018-09-01';
+  const result = calculateYearsAndMonths(startDate);
+
+  document.getElementById('result').textContent = 
+  
+  `I am a computer engineering graduate with a comprehensive background in mobile application development, boasting over ${result.years} year(s) and ${result.months} month(s) of hands-on experience. My professional approach is characterized by a strong attention to detail and an unwavering commitment to achieving measurable results.`;
+}
+
+// Initial calculation on page load
+displayYearsAndMonths();
+
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
 
