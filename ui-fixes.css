@@ -7,4 +7,4 @@
 .certification>span{font:9px 'DM Mono',monospace;color:var(--red);letter-spacing:.12em}
 .certification strong{font-size:clamp(20px,3vw,34px);line-height:1.15;letter-spacing:-.035em;color:var(--white);max-width:700px}
 .certification small{font:10px 'DM Mono',monospace;color:var(--muted)}
-@media(max-width:560px){.impact-strip{grid-template-columns:1fr}.impact-strip div{border-left:1px solid var(--line)!important}.certification{padding:24px 20px}.certification strong{font-size:22px}.certification small{line-height:1.6}.certification-section .section-heading{margin-bottom:32px}}
+@media(max-width:560px){.impact-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.impact-strip div{border-left:1px solid var(--line)!important}.impact-strip div+div{border-left:1px solid var(--line)!important}.certification{padding:24px 20px}.certification strong{font-size:22px}.certification small{line-height:1.6}.certification-section .section-heading{margin-bottom:32px}}
