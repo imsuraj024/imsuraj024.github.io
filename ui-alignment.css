@@ -1,0 +1,22 @@
+/* Section alignment: communications matches certification */
+.contact{
+  text-align:left;
+}
+.contact-core{
+  max-width:var(--max);
+  margin:0 auto;
+}
+.contact .system-label{
+  justify-content:initial;
+}
+.contact .system-label span:last-child{
+  margin-left:auto;
+}
+.contact-links{
+  justify-content:flex-start;
+}
+@media(max-width:560px){
+  .contact .system-label span:last-child{
+    margin-left:auto;
+  }
+}
